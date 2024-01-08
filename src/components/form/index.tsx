@@ -28,7 +28,6 @@ const CustomForm: React.FC<FormProps> = ({
   },
   cards,
   onEnd,
-  accessUpdate,
   initial,
   notSerialize = false,
   subBtn = () => {},

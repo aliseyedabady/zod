@@ -17,7 +17,6 @@ export interface FormProps {
   sortGet?: (state: any) => object;
   cards?: Card[];
   onEnd?: (data?: any, body?: any) => void;
-  accessUpdate?: string | string[];
   initial?: any;
   notSerialize?: boolean;
   subBtn?: () => JSX.Element;

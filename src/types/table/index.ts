@@ -1,6 +1,5 @@
 export interface TableProps {
   title?: string;
-  subTitle: string;
   headers: Header[];
   api: {
     route: string;

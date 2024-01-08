@@ -1,0 +1,40 @@
+.table-wrapper {
+  table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr {
+      th {
+        text-align: right;
+      }
+    }
+    tr:not(:last-child) {
+      th,
+      td {
+        border-bottom: 1px solid #e5eaef;
+      }
+    }
+    tr {
+      th,
+      td {
+        padding: 16px;
+      }
+    }
+  }
+}
+.pagination {
+  li {
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .active {
+    // @apply bg-primary text-white;
+  }
+}

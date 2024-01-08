@@ -1,10 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "../features/user";
 import themeReducer from "../features/theme";
+import modalDelete from "../features/modalDelete";
+import tableReducer from "../features/table";
+
 export const store = configureStore({
   reducer: {
     userReducer,
     themeReducer,
+    modalDelete,
+    tableReducer,
   },
 });
 
