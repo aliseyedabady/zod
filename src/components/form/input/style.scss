@@ -1,0 +1,19 @@
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.06) -1px 3px 10px 0px;
+  border-color: rgb(212, 207, 207);
+}
+input {
+  transition: all 0.3s;
+  outline: none;
+}
+.form-control {
+  .iconify {
+    font-size: 1.25rem;
+    height: 18px;
+    width: 18px;
+    stroke-width: 1.6px;
+    stroke: rgb(207, 207, 207);
+    color: rgb(207, 207, 207);
+    transition: stroke 0.3s color 0.3s;
+  }
+}

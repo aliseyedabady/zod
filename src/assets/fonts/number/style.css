@@ -1,0 +1,55 @@
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./KalamehWebFaNum-Thin.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./KalamehWebFaNum-ExtraLight.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./KalamehWebFaNum-Light.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./KalamehWebFaNum-Medium.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./KalamehWebFaNum-SemiBold.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 800;
+  src: url("./KalamehWebFaNum-ExtraBold.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: 900;
+  src: url("./KalamehWebFaNum-Black.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./KalamehWebFaNum-Bold.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: KalamehWebFaNum;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./KalamehWebFaNum-Regular.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
