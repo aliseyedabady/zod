@@ -1,10 +1,10 @@
 import classNames from "classnames";
-import { useState } from "react";
-import { RxDashboard } from "react-icons/rx";
-import MenuItem from "../menuItem";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { MenuProps } from "../../types/menu";
+import MenuItem from "../menuItem";
 
-const Menu = () => {
+const Menu: React.FC<MenuProps> = ({ label, icon, nested }) => {
   const [active, setActive] = useState<boolean>(false);
   const btnHandler = () => setActive(!active);
   const variants = {
@@ -27,16 +27,22 @@ const Menu = () => {
     <div className="min-h-[55px]">
       <button
         onClick={btnHandler}
-        className="flex items-center w-full h-[55px]"
+        className="flex items-center w-full h-[55px] focus:outline-none"
       >
-        <RxDashboard className={classNames({ "text-[#6B10C6]": active })} />
+        {icon({
+          className: classNames({
+            "text-[#6B10C6]": active,
+            "text-[#A2A5B9]": !active,
+          }),
+        })}
+        {/* <icon className={classNames({ "text-[#6B10C6]": active })} /> */}
         <p
           className={classNames("mr-[0.75rem]", {
             "text-[#747990]": !active,
             "text-[#283252]": active,
           })}
         >
-          داشبورد
+          {label}
         </p>
         <motion.svg
           animate={active ? "open" : "close"}
@@ -48,7 +54,7 @@ const Menu = () => {
           height="1em"
           viewBox="0 0 24 24"
           data-icon="feather:chevron-down"
-          className="mr-auto"
+          className="mr-auto text-[#A2A5B9]"
         >
           <path
             fill="none"
@@ -66,11 +72,9 @@ const Menu = () => {
         className="overflow-hidden"
         initial={{ height: 0 }}
       >
-        {Array(7)
-          .fill(1)
-          .map(() => (
-            <MenuItem />
-          ))}
+        {nested.map((ele, key) => (
+          <MenuItem key={key} label={ele.label} route={ele.route} />
+        ))}
       </motion.div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { IconType } from "react-icons";
 import { FormElement } from "../form";
 import { Header } from "../table";
 
@@ -6,7 +7,7 @@ export interface PanelProps {
 }
 export interface AreaProps {
   label: string;
-  icon: React.ReactNode;
+  icon: IconType;
   route?: string;
   nested: boolean;
   pages: PageProps[];

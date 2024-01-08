@@ -97,6 +97,7 @@ const Panel: React.FC<PanelProps> = ({ structure }) => {
             if (page) {
               return renderRoute(page);
             }
+            return <></>;
           });
         })}
     </Routes>
